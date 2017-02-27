@@ -1,5 +1,5 @@
 class Floor
-	attr_accessor :number, :requestList, :upList, :downList
+	attr_accessor :number, :upList, :downList
 
 	def initialize(number)
 		@number = number

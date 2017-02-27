@@ -3,5 +3,4 @@ class State
 	define :ONMOVE, "ONMOVE"
 	define :WAITING, "WAITING"
 	define :IDLE, "IDLE"
-	define :UNDERMAINTENANCE, "UNDERMAINTENANCE"
 end
