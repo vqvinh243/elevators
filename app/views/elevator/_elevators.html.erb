@@ -1,0 +1,20 @@
+<table border="1">
+  <tr>
+    <th>Elevator</th>
+    <th>Floor</th>
+    <th>State</th>
+  </tr>
+  <% ElevatorController.elevators.each do |elevator| %>
+  <tr>
+    <td><%= "elevator" %></td>
+    <td><%= elevator.event.curFloor %></td>
+    <td><% if elevator.state != State::ONMOVE %>
+              <%= elevator.state %>
+            <% else %>
+            <%= elevator.event.action %>
+            <% end %>
+    </td>
+  </tr>
+  <% end %>
+</table>
+

@@ -1,0 +1,20 @@
+<div id="elevator_table"><%= render partial: "elevators" %></div>
+<br>
+<br>
+<%=link_to "Initialize", elevator_init_path %>
+<br>
+<br>
+<% if ElevatorController.num_of_elevator != 0 %>
+<%= render partial: "sendRequest" %>
+<% end %>
+
+<!-- make the table update result after each second -->
+<script type="text/javascript">
+	$(document).ready(
+	    function() {
+	      setInterval(function() {
+	         $('#elevator_table').load('reload_table');
+	         console.log("1");
+	    }, 2000);
+	});
+</script>

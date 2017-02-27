@@ -1,0 +1,9 @@
+<%= form_tag("sendRequest") do %>
+  <%= label_tag(:srcFloor, "Src. floor: ") %>
+  <%= number_field_tag(:srcFloor) %>
+  <%= label_tag(:desFloor, "Des. floor: ") %>
+  <%= number_field_tag(:desFloor) %>
+  <%= label_tag(:direction, "Direction: ") %>
+  <%= select_tag(:direction, options_for_select([['UP', 'UP'], ['DOWN', 'DOWN']], 'UP')) %>
+  <%= submit_tag("Submit") %>
+<% end %>

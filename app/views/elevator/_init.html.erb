@@ -1,0 +1,9 @@
+<%= form_tag("changeNum") do %>
+  <%= label_tag(:numOfElevator, "Number of elevator: ") %>
+  <%= number_field_tag(:numOfElevator) %>
+  <br>
+  <%= label_tag(:numOfFloor, "Number of floor:") %>
+  <%= number_field_tag(:numOfFloor) %>
+  <br>
+  <%= submit_tag("Submit") %>
+<% end %>
